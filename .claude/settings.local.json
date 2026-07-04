@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(pkill *)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill *)",
+      "Bash(kill *)",
+      "Bash(cmd.exe *)",
+      "Bash(powershell *)"
+    ]
+  }
+}

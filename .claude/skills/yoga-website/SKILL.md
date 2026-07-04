@@ -14,6 +14,7 @@ This skill guides Claude Code when working with the `yoga-website` repository �
 - **Entry point:** `index.html`
 - **Styles:** `style.css`
 - **No build step** required
+- **Live demo:** http://u3554010.isp.regruhosting.ru/ (hosted on Reg.ru; SSL certificate is being issued, currently served over HTTP)
 - **Target audience:** Yoga and wellness studios, private instructors, wellness spaces
 
 ## Repository Structure
@@ -46,6 +47,7 @@ When the user asks about the project, summarize:
 2. Stack and structure
 3. Design direction
 4. Link to GitHub: https://github.com/NataKl/yoga-website
+5. Link to live demo: http://u3554010.isp.regruhosting.ru/ (Reg.ru hosting, SSL pending)
 
 ### Launch the Site
 
@@ -90,7 +92,8 @@ When the user asks to publish or prepare the project:
 1. Confirm README is up to date.
 2. Ensure all changes are committed with clear messages.
 3. Push to origin/main.
-4. Optional: suggest GitHub Pages deployment with these settings:
+4. The site is also deployed at http://u3554010.isp.regruhosting.ru/ via Reg.ru hosting.
+5. Optional: suggest GitHub Pages deployment with these settings:
    - Source: Deploy from a branch → `main` → `/ (root)`
    - URL will be `https://NataKl.github.io/yoga-website`
 

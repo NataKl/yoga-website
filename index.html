@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Body & Mind</title>
+    <meta name="description" content="Body & Mind — йога, пилатес и медитация в Санкт-Петербурге. Индивидуальный подход, новейшие техники, пробное занятие 1 500 ₽. Запишитесь через Telegram.">
+    <meta property="og:title" content="Body & Mind — пространство для тела и ума">
+    <meta property="og:description" content="Йога, пилатес и медитация с индивидуальным подходом в Санкт-Петербурге. Пробное занятие 1 500 ₽.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3e🧘%3c/text%3E%3C/svg%3E" type="image/svg+xml">
+    <title>Body & Mind — йога, пилатес, медитация</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,16 +17,22 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="#" class="logo">Body & Mind</a>
-            <nav class="nav">
+            <a href="#top" class="logo" aria-label="Body & Mind — на главную">Body & Mind</a>
+            <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            <nav class="nav" id="nav-menu">
                 <a href="#about">О нас</a>
-                <a href="#why">Услуги</a>
+                <a href="#why">Почему мы</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#prices">Тарифы</a>
                 <a href="#contacts">Контакты</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="top">
         <div class="hero-image">
             <img src="yoga.jpg" alt="Yoga Body & Mind">
         </div>
@@ -29,7 +40,7 @@
         <div class="hero-content">
             <h1 class="hero-title">Body <em>&</em><br>Mind</h1>
             <p class="hero-subtitle">Пространство для тела и ума</p>
-            <a href="#contacts" class="btn">Начать заниматься</a>
+            <a href="https://t.me/nata_natalyk" target="_blank" rel="noopener" class="btn">Начать заниматься</a>
         </div>
     </section>
 
@@ -43,7 +54,7 @@
                     <span class="section-label">Shhh…</span>
                     <h2>Секретное<br>пространство</h2>
                     <p>Откройте для себя пространство, где тело становится сильнее и гибче, а ум — спокойнее. Йога, пилатес и медитация помогают снять напряжение, улучшить осанку, восстановить энергию и почувствовать внутренний баланс.</p>
-                    <p>Занятия подходят для любого уровня подготовки: от первых шагов до регулярной практики. Приходите, чтобы уделить время себе, перезагрузиться и почувствовать лёгкость уже после первых занятий.</p>
+                    <p>Мы используем новейшие техники безопасной нагрузки и восстановления. Каждый клиент получает внимание инструктора: перед практикой уточняем состояние, цели и ограничения, а затем корректируем упражнения лично под вас.</p>
                 </div>
             </div>
         </div>
@@ -59,42 +70,275 @@
                 <div class="why-item">
                     <span class="why-number">01</span>
                     <h3>Снятие напряжения</h3>
-                    <p>Йога и медитация помогают расслабить мышцы и ум, избавиться от стресса и тревожных мыслей.</p>
+                    <p>Йога и медитация помогают расслабить мышцы и ум, избавиться от стресса и тревожных мыслей. Применяем актуальные техники нервной регуляции и дыхательных практик.</p>
                 </div>
                 <div class="why-item">
                     <span class="why-number">02</span>
                     <h3>Улучшение осанки</h3>
-                    <p>Пилатес и йога укрепляют кор, выравнивают позвоночник и улучшают общее самочувствие.</p>
+                    <p>Пилатес и йога укрепляют кор, выравнивают позвоночник и улучшают общее самочувствие. Каждое движение сопровождаем лично, чтобы нагрузка работала именно для вашего тела.</p>
                 </div>
                 <div class="why-item">
                     <span class="why-number">03</span>
                     <h3>Восстановление энергии</h3>
-                    <p>Регулярная практика наполняет силой, повышает концентрацию и возвращает внутренний баланс.</p>
+                    <p>Регулярная практика наполняет силой, повышает концентрацию и возвращает внутренний баланс. Программа подстраивается под вас — от начинающего до продвинутого уровня.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta" id="contacts">
+    <section class="reviews" id="reviews">
         <div class="container">
-            <div class="cta-inner">
-                <h2>Начать<br>заниматься</h2>
-                <p>Запишитесь на пробное занятие и первичную консультацию.<br>Мы подберём программу под ваш уровень и цели.</p>
-                <a href="#" class="btn btn-light">Записаться</a>
+            <div class="reviews-header">
+                <span class="section-label">Отзывы</span>
+                <h2>Что говорят о занятиях</h2>
+            </div>
+            <div class="reviews-slider">
+                <button class="slider-arrow slider-prev" aria-label="Предыдущий отзыв">&#8592;</button>
+                <div class="reviews-track-wrapper">
+                    <div class="reviews-track">
+                        <div class="review-card">
+                            <blockquote>
+                                <p>«За месяц регулярных занятий ушла ноющая боль в пояснице. Теперь целый день за компьютером переношу легче, а вечером тело не «каменеет».»</p>
+                            </blockquote>
+                            <div class="review-author">
+                                <span class="review-name">Анна</span>
+                                <span class="review-result">Снятие боли в спине</span>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <blockquote>
+                                <p>«Раньше засыпала часами, сейчас после вечерней практики сплю глубже и высыпаюсь. Утром просыпаюсь бодрой, без тревожных мыслей.»</p>
+                            </blockquote>
+                            <div class="review-author">
+                                <span class="review-name">Марина</span>
+                                <span class="review-result">Восстановление сна</span>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <blockquote>
+                                <p>«Не думала, что смогу дотянуться до пола ладонями. Через два месяца занятий растяжка заметно выросла, и осанка стала ровнее.»</p>
+                            </blockquote>
+                            <div class="review-author">
+                                <span class="review-name">Елена</span>
+                                <span class="review-result">Гибкость и осанка</span>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <blockquote>
+                                <p>«После индивидуальных занятий вернулась энергия, которой не хватало после работы. Инструктор подбирает всё лично — чувствуешь заботу и прогресс.»</p>
+                            </blockquote>
+                            <div class="review-author">
+                                <span class="review-name">Ольга</span>
+                                <span class="review-result">Энергия и индивидуальный подход</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-arrow slider-next" aria-label="Следующий отзыв">&#8594;</button>
+            </div>
+            <div class="slider-dots" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <section class="prices" id="prices">
+        <div class="container">
+            <div class="prices-header">
+                <span class="section-label">Тарифы</span>
+                <h2>Выберите формат под себя</h2>
+            </div>
+            <div class="prices-grid">
+                <div class="price-card">
+                    <span class="price-name">Разовое занятие</span>
+                    <div class="price-value">1 500 ₽</div>
+                    <p>Идеально, чтобы познакомиться с пространством и стилем преподавания. Перед началом проводим короткую встречу — уточняем ваши цели, состояние здоровья и уровень подготовки.</p>
+                    <ul class="price-features">
+                        <li>Индивидуальная корректировка асан</li>
+                        <li>Современные техники снятия стресса</li>
+                        <li>Подбор упражнений под ваш уровень</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <span class="price-name">Абонемент 8 занятий</span>
+                    <div class="price-value">10 000 ₽</div>
+                    <p>Регулярная практика с прогрессией нагрузки. Каждое занятие строится с учётом вашего самочувствия, поэтому программа меняется вместе с вами.</p>
+                    <ul class="price-features">
+                        <li>Персональный план развития</li>
+                        <li>Современные подходы к йоге и пилатесу</li>
+                        <li>Постоянная обратная связь</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <span class="price-name">Индивидуальное занятие</span>
+                    <div class="price-value">3 000 ₽</div>
+                    <p>Полностью персональная работа: техники подбираются под ваш запрос — восстановление, работа с осанкой, снятие напряжения или глубокая расслабленность.</p>
+                    <ul class="price-features">
+                        <li>Программа под ваш запрос</li>
+                        <li>Новейшие методики расслабления и укрепления</li>
+                        <li>100% внимания инструктора</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <section class="cta" id="cta">
+        <div class="container">
+            <div class="cta-inner">
+                <h2>Начать<br>заниматься</h2>
+                <p>Запишитесь на пробное занятие и первичную консультацию.<br>Мы подберём программу под ваш уровень и цели, с учётом индивидуальных особенностей и пожеланий.</p>
+                <a href="https://t.me/nata_natalyk" target="_blank" rel="noopener" class="btn btn-light">Записаться</a>
+                <a href="tel:+79052106473" class="btn btn-outline-light">Позвонить</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="footer-layout">
                 <div class="footer-logo">Body & Mind</div>
+                <address class="footer-address">
+                    <a href="https://yandex.ru/maps/org/body_mind/placeholder_id" target="_blank" rel="noopener">
+                        Санкт-Петербург, проспект Энергетиков, дом 4, корп. 3
+                    </a>
+                </address>
                 <div class="footer-contacts">
-                    <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-                    <a href="mailto:hello@bodymind.ru">hello@bodymind.ru</a>
+                    <a href="tel:+79052106473">
+                        <span class="contact-icon" aria-hidden="true">📞</span>
+                        +7 (905) 210-64-73
+                    </a>
+                    <a href="https://t.me/nata_natalyk" target="_blank" rel="noopener">
+                        <span class="contact-icon" aria-hidden="true">✈️</span>
+                        Telegram @nata_natalyk
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+    <a href="#top" class="back-to-top" aria-label="Наверх">&#8593;</a>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        const links = nav.querySelectorAll('a');
+
+        toggle.addEventListener('click', () => {
+            const isOpen = toggle.classList.toggle('active');
+            nav.classList.toggle('active');
+            toggle.setAttribute('aria-expanded', isOpen);
+            toggle.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+        });
+
+        links.forEach(link => link.addEventListener('click', () => {
+            toggle.classList.remove('active');
+            nav.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Открыть меню');
+        }));
+
+        document.addEventListener('click', (e) => {
+            if (!nav.classList.contains('active')) return;
+            const isClickInside = nav.contains(e.target) || toggle.contains(e.target);
+            if (!isClickInside) {
+                toggle.classList.remove('active');
+                nav.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+                toggle.setAttribute('aria-label', 'Открыть меню');
+            }
+        });
+
+        // Reviews slider
+        const track = document.querySelector('.reviews-track');
+        const wrapper = document.querySelector('.reviews-track-wrapper');
+        const cards = track ? track.querySelectorAll('.review-card') : [];
+        const prevBtn = document.querySelector('.slider-prev');
+        const nextBtn = document.querySelector('.slider-next');
+        const dotsContainer = document.querySelector('.slider-dots');
+        let current = 0;
+        const slidesToShow = () => window.innerWidth <= 900 ? 1 : 2;
+        const totalPages = () => cards.length - slidesToShow() + 1;
+
+        function createDots() {
+            if (!dotsContainer || cards.length === 0) return;
+            dotsContainer.innerHTML = '';
+            const pages = totalPages();
+            for (let i = 0; i < pages; i++) {
+                const dot = document.createElement('button');
+                dot.className = 'slider-dot' + (i === current ? ' active' : '');
+                dot.setAttribute('aria-label', `Перейти к отзыву ${i + 1}`);
+                dot.addEventListener('click', () => {
+                    current = i;
+                    updateSlider();
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function updateDots() {
+            if (!dotsContainer) return;
+            const dots = dotsContainer.querySelectorAll('.slider-dot');
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+        }
+
+        function updateSlider() {
+            if (!track || cards.length === 0) return;
+            const cardWidth = cards[0].getBoundingClientRect().width;
+            const gap = parseFloat(getComputedStyle(track).gap) || 0;
+            track.style.transform = `translateX(-${current * (cardWidth + gap)}px)`;
+            if (prevBtn) prevBtn.disabled = current === 0;
+            if (nextBtn) nextBtn.disabled = current >= cards.length - slidesToShow();
+            updateDots();
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (current > 0) {
+                    current--;
+                    updateSlider();
+                }
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                if (current < cards.length - slidesToShow()) {
+                    current++;
+                    updateSlider();
+                }
+            });
+        }
+
+        if (wrapper) {
+            wrapper.addEventListener('scroll', () => {
+                if (!track || cards.length === 0) return;
+                const cardWidth = cards[0].getBoundingClientRect().width;
+                const gap = parseFloat(getComputedStyle(track).gap) || 0;
+                const newCurrent = Math.round(wrapper.scrollLeft / (cardWidth + gap));
+                if (newCurrent !== current) {
+                    current = Math.max(0, Math.min(newCurrent, cards.length - slidesToShow()));
+                    updateDots();
+                }
+            });
+        }
+
+        window.addEventListener('resize', () => {
+            current = Math.min(current, Math.max(0, cards.length - slidesToShow()));
+            createDots();
+            updateSlider();
+        });
+
+        createDots();
+        updateSlider();
+
+        // Back to top
+        const backToTop = document.querySelector('.back-to-top');
+        if (backToTop) {
+            const toggleBackToTop = () => {
+                const scrolled = window.scrollY > 600;
+                backToTop.classList.toggle('visible', scrolled);
+            };
+            window.addEventListener('scroll', toggleBackToTop, { passive: true });
+            toggleBackToTop();
+        }
+    </script>
 </body>
 </html>

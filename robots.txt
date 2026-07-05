@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://u3554010.isp.regruhosting.ru/sitemap.xml

@@ -6,8 +6,11 @@
 
 Сайт спроектирован так, чтобы привлекать клиентов из поиска: уникальный title и description, единственный заголовок H1, структура из H2, семантическая вёрстка, разметка Schema.org для локального бизнеса, адаптивный дизайн и быстрая загрузка без сборки.
 
-![yoga&relax](yoga2.jpg)
-
+![yoga&relax](index.jpg)
+![yoga&relax](about.jpg)
+![yoga&relax](reviews.jpg)
+![yoga&relax](prices.jpg)
+![yoga&relax](contacts.jpg)
 ---
 
 ## Что внутри

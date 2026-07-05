@@ -6,6 +6,8 @@
 
 Сайт спроектирован так, чтобы привлекать клиентов из поиска: уникальный title и description, единственный заголовок H1, структура из H2, семантическая вёрстка, разметка Schema.org для локального бизнеса, адаптивный дизайн и быстрая загрузка без сборки.
 
+Для этого лендинга разработан Claude Code skill (`.claude/skills/yoga-website/SKILL.md`), который помогает вносить правки, обновлять README и публиковать изменения. Исходники выложены на GitHub.
+
 ![hero](index.JPG)
 ![о нас](about.JPG)
 ![отзывы](reviews.JPG)
@@ -40,7 +42,10 @@ yoga-website/
 ├── yoga.jpg            # Фоновое изображение hero
 ├── yoga2.jpg           # Изображение раздела «О нас»
 └── yoga.txt.txt        # Исходный текст описания
+└── .claude/skills/yoga-website/SKILL.md  # Claude Code skill для работы с лендингом
 ```
+
+**Репозиторий:** https://github.com/NataKl/yoga-website
 
 ## Для кого этот сайт
 

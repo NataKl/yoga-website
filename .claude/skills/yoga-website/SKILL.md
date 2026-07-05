@@ -24,9 +24,10 @@ yoga-website/
 ├── index.html                  # Main landing page
 ├── style.css                   # Custom CSS with variables, animations, responsive design
 ├── README.md                   # Project description, tagline, usage instructions
+├── robots.txt                  # Search crawler instructions
+├── sitemap.xml                 # Sitemap for search engines
 ├── yoga.jpg                    # Hero background image
 ├── yoga2.jpg                   # About section image
-├── take-your-time.ru_.png      # Reference / moodboard screenshot
 ├── yoga.txt.txt                # Original description text (source material)
 └── .claude/skills/yoga-website/SKILL.md   # This file
 ```
@@ -35,7 +36,7 @@ yoga-website/
 
 - **Tone:** Calm, warm, minimal, organic, refined
 - **Aesthetic:** Soft beige/olive palette, elegant serif display font (Cormorant Garamond) + clean sans-serif body (Outfit)
-- **Features:** Full-screen hero, smooth reveal animations, grain overlay, asymmetric organic shapes, responsive layout
+- **Features:** Full-screen hero, smooth reveal animations, grain overlay, asymmetric organic shapes, responsive layout, reviews slider
 - **Never use:** Generic fonts (Inter, Roboto, Arial), cliché purple gradients, cookie-cutter layouts
 
 ## Common Tasks
@@ -67,7 +68,8 @@ python -m http.server 8000
 1. Read `index.html` and `style.css` before editing.
 2. Preserve the existing design system (CSS variables, fonts, spacing scale, animations).
 3. Keep edits focused and minimal unless a redesign is explicitly requested.
-4. Validate HTML/CSS after changes.
+4. Maintain SEO best practices: single H1, semantic headings, meta description, alt texts, schema.org markup.
+5. Validate HTML/CSS after changes.
 
 ### Update README.md
 
@@ -85,6 +87,7 @@ Before considering work complete:
 3. Ensure no broken links or missing assets.
 4. Validate HTML with a linter or quick browser open.
 5. Check responsive breakpoints (900px, 768px).
+6. Confirm `robots.txt` and `sitemap.xml` are present and reference the correct domain.
 
 ### Prepare for Publication
 
